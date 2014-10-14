@@ -13,11 +13,16 @@ while (step < len(list1)):
 import random
 rand = random.randint(0,50)
 
-while (userInput < or > rand):
+print 'Guess a number between 0 & 50'
+userInput = int(raw_input())
+
+while (userInput != rand):
     print 'Guess a number between 0 & 50'
-    userInput = raw_input()
-    if userInput == rand:
-        print 'Correct'
-    elif print 'Try Again'
-    
+    userInput = int(raw_input())
+    if userInput < rand:
+        print 'Too Low'
+    elif userInput > rand:
+        print 'Too High'
+    else:
+        print "Correct"
     
